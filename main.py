@@ -8,7 +8,7 @@ from PIL import Image
 
 app = FastAPI()
 
-model = tf.keras.models.load_model('teeth_case_based_model.h5')
+model = tf.keras.models.load_model('model.h5')
 index = faiss.read_index('oral_cases.index')
 
 with open('case_ids.json', 'r') as f:
